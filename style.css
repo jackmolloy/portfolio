@@ -619,7 +619,7 @@ div.pp_default .pp_loaderIcon
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    z-index: 7;
+    z-index: 9;
 }
 
 #aboutMe .section-title-holder
