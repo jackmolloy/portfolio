@@ -19,6 +19,14 @@ body a:hover
     color: #ee87a4;
 }
 
+.strong {
+  font-weight: bold;
+}
+
+.italics {
+  font-style: italic;
+}
+
 .one_half {
   color: #434343;
 }
@@ -334,7 +342,7 @@ h1.big-title
 
 #services
 {
-    background-color: #f9a11a;;
+    background-color: #f9a11a;
     z-index: 9;
 }
 
@@ -388,8 +396,8 @@ h1.big-title
 
 #portfolio
 {
-    background-color: #221C5A;
-    background-image: url("demo-images/background_img_02.jpg");
+    background-color: #434343;
+    /* background-image: url("demo-images/background_img_02.jpg"); */
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto;
@@ -398,12 +406,12 @@ h1.big-title
 
 #portfolio .section-title-holder
 {
-    background-color: rgb(255, 186, 66);
+    background-color: #48bce6;
 }
 
 #portfolio .section-title-holder span
 {
-    color: #e3a436;
+    color: #2a6e9b;
 }
 
 .page-template-page-portfolio .section
@@ -610,7 +618,7 @@ div.pp_default .pp_loaderIcon
 
 #aboutMe .section-title-holder span
 {
-    color: #48bce6;
+    color: #a35f05;
 }
 
 #about .section-content-holder
