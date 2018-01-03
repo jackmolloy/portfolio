@@ -19,6 +19,17 @@ body a:hover
     color: #ee87a4;
 }
 
+a.button {
+  color: #48bce6;
+  border: 2px solid #48bce6;
+}
+
+a.button:hover {
+  color: #FFF;
+  border: 2px solid #48bce6;
+  background-color: #48bce6;
+}
+
 .strong {
   font-weight: bold;
 }
@@ -1158,8 +1169,8 @@ footer
 #portfolio-2
 {
 
-    background-color: #221c5a;
-    background-image: url(demo-images/item_background_01.jpg);
+    background-color: #434343;
+    /* background-image: url(demo-images/item_background_01.jpg); */
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 100% auto;
@@ -1187,7 +1198,7 @@ footer
 {
     top: -60px;
     right: -60px;
-    background-color: #26276d;
+    background-color: #48bce6;
     line-height: 0;
     font-size: 0;
     width: 60px;
@@ -1196,7 +1207,7 @@ footer
 
 .single-portfolio .x-close img
 {
-    opacity: 0.4;
+    opacity: 0.6;
     transition: opacity .2s linear;
     width: 30px;
     height: 30px;
