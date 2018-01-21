@@ -39,7 +39,7 @@ a.button:hover {
 }
 
 .one_half {
-  color: #434343;
+  color: #323232;
 }
 
 .blu {
@@ -103,7 +103,7 @@ a.button:hover {
 {
     transition: background-color .2s linear;
     z-index: 99 !important;
-    background-color: #48bce6;
+    background-color: #323232;;
     width: 100% !important;
     top: 0;
     position: fixed;
@@ -184,8 +184,16 @@ a.button:hover {
 
 .section-title-holder
 {
-    background-color: #32DB8A;
+    background-color: #ffffff;
     width: 370px;
+    height: 370px;
+    z-index: 2;
+}
+
+.section-title-holder-logo
+{
+    background-color: #323232;
+    width: 226px;
     height: 370px;
     z-index: 2;
 }
@@ -256,7 +264,7 @@ a.button:hover {
     line-height: 100%;
     text-transform: uppercase;
     margin-top: -65px;
-    color: #434343;
+    color: #323232;
 }
 
 .extra-content-left
@@ -294,12 +302,12 @@ a.button:hover {
 {
     padding-bottom: 170px;
     min-height: calc(100vh - 170px);
-    background-color: #221c5a;
-    background-image:url(images/workspace.jpg);
+    background-color: #323232;
+    background-image:url(images/bg4.jpg);
     background-repeat: repeat;
     background-position: center top;
     background-size: cover;
-    z-index: 10;
+    z-index: 1;
 }
 
 .top-logo
@@ -407,8 +415,8 @@ h1.big-title
 
 #portfolio
 {
-    background-color: #434343;
-    /* background-image: url("demo-images/background_img_02.jpg"); */
+    background-color: #323232;
+    background-image:url(images/bg-port.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto;
@@ -604,7 +612,7 @@ div.pp_default .pp_loaderIcon
 
 #about
 {
-    background-color: rgb(34, 28, 90);
+    background-color: #323232;
     background-image: url("demo-images/background_img_03.jpg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -614,11 +622,11 @@ div.pp_default .pp_loaderIcon
 
 #aboutMe
 {
-    background-color: #434343;
-    /* background-image: url("demo-images/background_img_03.jpg"); */
+    background-color: #323232;
+    background-image:url(images/jack3.jpg);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;
+    background-size: auto;
     z-index: 9;
 }
 
@@ -689,8 +697,8 @@ div.pp_default .pp_loaderIcon
 
 #news
 {
-    background-color: rgb(34, 28, 90);
-    background-image: url("demo-images/background_img_04.jpg");
+    background-color: #323232;
+    background-image:url(images/bg4.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -938,8 +946,8 @@ a.video-popup-holder:hover img.popup-play
 
 #contact
 {
-    background-color: rgb(34, 28, 90);
-    background-image: url("demo-images/background_img_05b.jpg");
+    background-color: #323232;
+    background-image:url(images/bg4.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto;
@@ -1117,7 +1125,7 @@ span.contact-form-not-valid-tip
 
 footer
 {
-    background-color: #221C5A;
+    background-color: #323232;
 }
 
 .footer
@@ -1125,7 +1133,7 @@ footer
     font-size: 16px;
     line-height: 36px;
     clear: both;
-    color: #5b5881;
+    color: #ffffff;
     text-align: center;
     padding: 100px 0;
 }
@@ -1142,7 +1150,7 @@ footer
 
 .footer a
 {
-    color: #5b5881;
+    color: #ffffff;
 }
 
 .social-footer a
@@ -1159,7 +1167,7 @@ footer
 
 #portfolio-1
 {
-    background-color: #434343;
+    background-color: #323232;
     /* background-image:url("demo-images/background_img_05b.jpg"); */
     background-repeat: no-repeat;
     background-position: center top;
@@ -1169,7 +1177,7 @@ footer
 #portfolio-2
 {
 
-    background-color: #434343;
+    background-color: #323232;
     /* background-image: url(demo-images/item_background_01.jpg); */
     background-repeat: no-repeat;
     background-position: left top;
@@ -1230,14 +1238,14 @@ footer
 {
     width: 435px;
     padding-left: 100px;
-    color: #434343;
+    color: #323232;
 }
 
 .single-portfolio .entry-content .one_half.last
 {
     padding-left: 0;
     padding-right: 100px;
-    color: #434343;
+    color: #323232;
 }
 
 .single-portfolio .entry-content h1
@@ -1265,18 +1273,24 @@ footer
         float: left;
         position: relative;
         margin-bottom: 37px;
-        color: #434343;
+        color: #323232;
     }
 
     .one_half
     {
         width: 46%;
-        color: #434343;
+        color: #323232;
     }
 
     .section-title-holder
     {
         width: 250px;
+        height: 250px;
+    }
+
+    .section-title-holder-logo
+    {
+        width: 153px;
         height: 250px;
     }
 
@@ -1388,14 +1402,14 @@ footer
         width: 40%;
         padding-left: 5%;
         margin-right: 10%;
-        color: #434343;
+        color: #323232;
     }
 
     .single-portfolio .entry-content .one_half.last
     {
         padding-left: 0;
         padding-right: 5%;
-        color: #434343;
+        color: #323232;
     }
 
 }
@@ -1434,7 +1448,7 @@ footer
         float: none;
         margin-right: 0;
         margin-left: 0;
-        color: #434343;
+        color: #323232;
     }
 
     .single-portfolio .entry-content .one_half
@@ -1443,20 +1457,20 @@ footer
         padding-left: 5%;
         padding-right: 5%;
         margin-right: 0;
-        color: #434343;
+        color: #323232;
     }
 
     .single-portfolio .entry-content .one_half.last
     {
         padding-left: 5%;
         padding-right: 5%;
-        color: #434343;
+        color: #323232;
     }
 
     .site-content .one_half, .single-portfolio .entry-content div
     {
         text-align: left;
-        color: #434343;
+        color: #323232;
     }
 
     .image-slider-wrapper.service a.image_slider_next
