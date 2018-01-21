@@ -4,19 +4,19 @@
 #circle-orbit-container {
   position: relative;
   margin: 15% auto;
-  height: 650px;
-  width: 650px;
+  height: 900px;
+  width: 900px;
   text-align: center;
 }
 
 /* ---------- Inner orbit - This is the circles closest to the central point ---------- */
 #inner-orbit {
   position: absolute;
-  top: -2px;
-  left: -2px;
-  width: 500px;
-  height: 500px;
-  border: 2px #4A437F dashed;
+  top: 15px;
+  left: 60px;
+  width: 750px;
+  height: 750px;
+  /*border: 2px #4A437F dashed;*/
   border-radius: 100%;
   -webkit-animation: spin-right 40s linear infinite;
   animation: spin-right 40s linear infinite;
@@ -26,8 +26,8 @@
   position: absolute;
   top: 75px;
   left: 75px;
-  width: 500px;
-  height: 500px;
+  width: 750px;
+  height: 750px;
   /*border: 2px #4A437F dashed;*/
   border-radius: 100%;
   background-image: url(images/jack.jpg);
@@ -48,11 +48,11 @@
 /* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
 #middle-orbit {
   position: absolute;
-  top: 35px;
-  left: 35px;
-  width: 575px;
-  height: 575px;
-  border: 2px #4A437F dashed;
+  top: -25px;
+  left: 20px;
+  width: 825px;
+  height: 825px;
+  /*border: 2px #4A437F dashed;*/
   border-radius: 100%;
   -webkit-animation: spin-right 70s linear infinite;
   animation: spin-right 70s linear infinite;
@@ -72,11 +72,11 @@
 /* ---------- Outer orbit - This is the circles furthest away from the central point ---------- */
 #outer-orbit {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 650px;
-  height: 650px;
-  border: 2px #4A437F dashed;
+  top: -60px;
+  left: -15px;
+  width: 900px;
+  height: 900px;
+  /*border: 2px #4A437F dashed;*/
   border-radius: 100%;
   -webkit-animation: spin-right 55s linear infinite;
   animation: spin-right 55s linear infinite;
@@ -87,6 +87,16 @@
   position: absolute;
   top: 10px;
   left: 125px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #00FFCA;
+}
+
+.outer-orbit-cirlces-2 {
+  position: absolute;
+  top: 40px;
+  left: 155px;
   height: 30px;
   width: 30px;
   border-radius: 100%;
@@ -419,10 +429,10 @@ a.button:hover {
     padding-bottom: 170px;
     min-height: calc(100vh - 170px);
     background-color: #323232;
-    background-image:url(images/bg4.jpg);
-    background-repeat: repeat;
-    background-position: center top;
-    background-size: cover;
+    background-image:url(images/home-orbit-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 25%;
+    background-size: auto;
     z-index: 1;
 }
 
