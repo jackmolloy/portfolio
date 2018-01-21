@@ -3,7 +3,7 @@
 /* ---------- Container for the orbiting circles animation ---------- */
 #circle-orbit-container {
   position: relative;
-  margin: 15% auto;
+  margin: 10% auto;
   height: 900px;
   width: 900px;
   text-align: center;
@@ -22,27 +22,66 @@
   animation: spin-right 40s linear infinite;
 }
 
-#inner-orbit-bg {
+/*#inner-orbit-bg {
   position: absolute;
   top: 75px;
   left: 75px;
   width: 750px;
   height: 750px;
-  /*border: 2px #4A437F dashed;*/
+  border: 2px #4A437F dashed;
   border-radius: 100%;
   background-image: url(images/jack.jpg);
-}
+}*/
 
 /* ---------- Repeating styles for the inner orbiting circles ---------- */
 .inner-orbit-cirlces {
   position: absolute;
-  top: 182px;
-  left: -6px;
+  top: 30%;
+  left: 0%;
   height: 10px;
   width: 10px;
   border-radius: 100%;
-  background-color: #ffffff;
-  background-image: url(images/jack.jpg);
+  background-color: #48bce6;
+}
+
+.inner-orbit-cirlces-2 {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #f9a11a;
+}
+
+.inner-orbit-cirlces-3 {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #48bce6;
+}
+
+.inner-orbit-cirlces-4 {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #48bce6;
+}
+
+.inner-orbit-cirlces-5 {
+  position: absolute;
+  top: -10%;
+  right: 50%;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #f9a11a;
 }
 
 /* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
@@ -78,8 +117,8 @@
   height: 900px;
   /*border: 2px #4A437F dashed;*/
   border-radius: 100%;
-  -webkit-animation: spin-right 55s linear infinite;
-  animation: spin-right 55s linear infinite;
+  /*-webkit-animation: spin-right 55s linear infinite;
+  animation: spin-right 55s linear infinite;*/
 }
 
 
@@ -97,14 +136,50 @@
 
 .outer-orbit-cirlces-2 {
   position: absolute;
-  top: 40px;
+  top: 100px;
+  left: 163px;
+  height: 30px;
+  width: 30px;
+  /*border-radius: 100%;
+  background-color: #00FFCA;*/
+  /*-webkit-animation: spin-left 55s linear infinite;
+  animation: spin-left 55s linear infinite;*/
+}
+
+.outer-orbit-cirlces-3 {
+  position: absolute;
+  top: 200px;
   left: 155px;
   height: 30px;
   width: 30px;
-  border-radius: 100%;
-  background-color: #00FFCA;
-  -webkit-animation: spin-left 55s linear infinite;
-  animation: spin-left 55s linear infinite;
+  /*border-radius: 100%;
+  background-color: #00FFCA;*/
+  /*-webkit-animation: spin-left 55s linear infinite;
+  animation: spin-left 55s linear infinite;*/
+}
+
+.outer-orbit-cirlces-4 {
+  position: absolute;
+  top: 300px;
+  left: 155px;
+  height: 30px;
+  width: 30px;
+  /*border-radius: 100%;
+  background-color: #00FFCA;*/
+  /*-webkit-animation: spin-left 55s linear infinite;
+  animation: spin-left 55s linear infinite;*/
+}
+
+.outer-orbit-cirlces-5 {
+  position: absolute;
+  top: 400px;
+  left: 155px;
+  height: 30px;
+  width: 30px;
+  /*border-radius: 100%;
+  background-color: #00FFCA;*/
+  /*-webkit-animation: spin-left 55s linear infinite;
+  animation: spin-left 55s linear infinite;*/
 }
 
 /* ---------- Animation ---------- */
@@ -141,13 +216,57 @@
 }
 .mytextwithicon:before {
     content: "J";  /* this is your text. You can also use UTF-8 character codes as I do here */
-    font-family: serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
     color: white;
     left:0px;
     position:absolute;
     top:0;
  }
 
+ .mytextwithicon-2 {
+     position:relative;
+ }
+ .mytextwithicon-2:before {
+     content: "A";  /* this is your text. You can also use UTF-8 character codes as I do here */
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 80px;
+     color: white;
+     left:0px;
+     position:absolute;
+     top:0;
+  }
+
+  .mytextwithicon-3 {
+      position:relative;
+  }
+  .mytextwithicon-3:before {
+      content: "C";  /* this is your text. You can also use UTF-8 character codes as I do here */
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 80px;
+      color: white;
+      left:0px;
+      position:absolute;
+      top:0;
+   }
+
+
+   .mytextwithicon-4 {
+       position:relative;
+   }
+   .mytextwithicon-4:before {
+       content: "K";  /* this is your text. You can also use UTF-8 character codes as I do here */
+       font-family: 'Montserrat', sans-serif;
+       font-weight: 700;
+       font-size: 80px;
+       color: white;
+       left:0px;
+       position:absolute;
+       top:0;
+    }
 
 body
 {
@@ -456,7 +575,7 @@ a.button:hover {
     background-color: #323232;
     background-image:url(images/home-orbit-bg.jpg);
     background-repeat: no-repeat;
-    background-position: center 25%;
+    background-position: center 15%;
     background-size: auto;
     z-index: 1;
 }
