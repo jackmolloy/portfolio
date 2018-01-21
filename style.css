@@ -82,6 +82,8 @@
   animation: spin-right 55s linear infinite;
 }
 
+
+
 /* ---------- Repeating styles for the outer orbiting circles ---------- */
 .outer-orbit-cirlces {
   position: absolute;
@@ -101,6 +103,8 @@
   width: 30px;
   border-radius: 100%;
   background-color: #00FFCA;
+  -webkit-animation: spin-left 55s linear infinite;
+  animation: spin-left 55s linear infinite;
 }
 
 /* ---------- Animation ---------- */
@@ -114,6 +118,16 @@
   }
 }
 
+@-webkit-keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
 .orbit-main{
     margin: auto;
     width: 50%;
@@ -122,6 +136,17 @@
     text-align: center;
 }
 
+.mytextwithicon {
+    position:relative;
+}
+.mytextwithicon:before {
+    content: "J";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: serif;
+    color: white;
+    left:0px;
+    position:absolute;
+    top:0;
+ }
 
 
 body
