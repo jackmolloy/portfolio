@@ -14,12 +14,12 @@
   position: absolute;
   top: 15px;
   left: 60px;
-  width: 750px;
-  height: 750px;
-  /*border: 2px #4A437F dashed;*/
+  width: 736px;
+  height: 560px;
+  border: 2px #4A437F dashed;
   border-radius: 100%;
-  -webkit-animation: spin-right 40s linear infinite;
-  animation: spin-right 40s linear infinite;
+  /*-webkit-animation: spin-right 40s linear infinite;
+  animation: spin-right 40s linear infinite;*/
 }
 
 /*#inner-orbit-bg {
@@ -268,6 +268,15 @@
        top:0;
     }
 
+
+.blurb {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
 body
 {
     font-family: 'Roboto', sans-serif;
@@ -275,6 +284,7 @@ body
     line-height: 26px;
     font-weight: 400;
     color: #23214c;
+    background-color: #323232;
 }
 
 body a
@@ -373,7 +383,7 @@ a.button:hover {
 {
     transition: background-color .2s linear;
     z-index: 99 !important;
-    background-color: #323232;;
+    background-color: transparent;
     width: 100% !important;
     top: 0;
     position: fixed;
@@ -570,7 +580,7 @@ a.button:hover {
 
 .intro-page
 {
-    padding-bottom: 170px;
+    /*padding-bottom: 170px;*/
     min-height: calc(100vh - 170px);
     background-color: #323232;
     background-image:url(images/home-orbit-bg.jpg);
@@ -1528,6 +1538,13 @@ footer
 /* END SINGLE PORTFOLIO */
 
 
+
+
+
+
+
+
+
 /* RESPONSIVE PART */
 
 @media screen and (max-width: 1270px) {
@@ -1684,6 +1701,13 @@ footer
 
 }
 
+
+
+
+
+
+
+
 @media screen and (max-width: 1100px) {
 
     .single-portfolio .x-close
@@ -1694,10 +1718,19 @@ footer
 
 }
 
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1020px) {
 
-    .content-1170
-    {
+    .content-1170{
         width: 100%;
     }
 
@@ -1751,7 +1784,7 @@ footer
 
     .section
     {
-        padding-bottom: 150px;
+        /*padding-bottom: 150px;*/
     }
 
     .section-content-holder.right
@@ -1888,18 +1921,45 @@ footer
     }
 }
 
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 925px) {
     .main-menu
     {
         display: block !important;
     }
+
+    .content-1170{
+        width: 100%;
+    }
+
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 925px) {
 
     .intro-page
     {
         min-height: 0;
+    }
+
+    .content-1170{
+        width: 100%;
     }
 
     .section
@@ -1928,6 +1988,7 @@ footer
     .mob-menu
     {
         display: block;
+        width: 100%;
     }
 
     .mob-menu:hover
@@ -1989,6 +2050,12 @@ footer
 
 }
 
+
+
+
+
+
+
 @media screen and (max-width: 805px) {
 
     .contact-form input[type=text], .contact-form input[type=email], .contact-form textarea, p.custom-field-class, #commentform #email, #commentform #author, #commentform #comment
@@ -1996,7 +2063,21 @@ footer
         width: 100% !important;
     }
 
+    .content-1170{
+        width: 100%;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 650px) {
@@ -2019,7 +2100,17 @@ footer
         right: auto;
         left: 30px;
     }
+
+    .content-1170{
+        width: 100%;
+    }
 }
+
+
+
+
+
+
 
 
 @media screen and (max-width: 350px) {
@@ -2044,5 +2135,9 @@ footer
     .image-slider-wrapper.service a.image_slider_next
     {
         top: -84px;
+    }
+
+    .content-1170{
+        width: 100%;
     }
 }

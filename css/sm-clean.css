@@ -124,10 +124,10 @@
     .sm-clean li {
         display: inline-block;
     }
-    
+
     .sm-clean .sub-menu li
     {
-        display: block;        
+        display: block;
         padding-left: 6px;
     }
 
@@ -191,7 +191,7 @@
     }
     .sm-clean li {
         border-top: 0;
-    }    
+    }
     .sm-clean > li > ul:after {
         top: -16px;
         left: 31px;
@@ -337,4 +337,3 @@
 .sub-menu .sub-menu {
     padding-top: 8px;
 }
-
