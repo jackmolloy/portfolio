@@ -1,12 +1,20 @@
+/* RESPONSIVE STYLESHEET */
+@media screen and (max-width: 1190px) {
+
+
+.mobile-body {
+  width: 100%;
+}
 
 
 /* ---------- Container for the orbiting circles animation ---------- */
 #circle-orbit-container {
   position: relative;
   margin: 10% auto;
-  height: 900px;
-  width: 900px;
+  height: 200px;
+  width: 100%;
   text-align: center;
+  border: 1px solid red;
 }
 
 /* ---------- Inner orbit - This is the circles closest to the central point ---------- */
@@ -14,10 +22,11 @@
   position: absolute;
   top: 15px;
   left: 60px;
-  width: 736px;
-  height: 560px;
+  width: 100%;
+  height: 200px;
   border: 2px #4A437F dashed;
   border-radius: 100%;
+  border: 1px solid red;
   /*-webkit-animation: spin-right 40s linear infinite;
   animation: spin-right 40s linear infinite;*/
 }
@@ -89,12 +98,13 @@
   position: absolute;
   top: -25px;
   left: 20px;
-  width: 825px;
-  height: 825px;
+  width: 100%;
+  height: 200px;
   /*border: 2px #4A437F dashed;*/
   border-radius: 100%;
   -webkit-animation: spin-right 70s linear infinite;
   animation: spin-right 70s linear infinite;
+  border: 1px solid red;
 }
 
 /* ---------- Repeating styles for the inner orbiting circles ---------- */
@@ -113,12 +123,13 @@
   position: absolute;
   top: -60px;
   left: -15px;
-  width: 900px;
-  height: 900px;
+  width: 100%;
+  height: 200px;
   /*border: 2px #4A437F dashed;*/
   border-radius: 100%;
   /*-webkit-animation: spin-right 55s linear infinite;
   animation: spin-right 55s linear infinite;*/
+  border: 1px solid red;
 }
 
 
@@ -205,17 +216,18 @@
 
 .orbit-main{
     margin: auto;
-    width: 50%;
+    width: 100%;
     border: 3px solid green;
     padding: 10px;
     text-align: center;
+    border: 1px solid red;
 }
 
 .mytextwithicon {
     position:relative;
 }
 .mytextwithicon:before {
-    content: "J";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    content: "W";  /* this is your text. You can also use UTF-8 character codes as I do here */
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 80px;
@@ -229,7 +241,7 @@
      position:relative;
  }
  .mytextwithicon-2:before {
-     content: "A";  /* this is your text. You can also use UTF-8 character codes as I do here */
+     content: "O";  /* this is your text. You can also use UTF-8 character codes as I do here */
      font-family: 'Montserrat', sans-serif;
      font-weight: 700;
      font-size: 80px;
@@ -243,7 +255,7 @@
       position:relative;
   }
   .mytextwithicon-3:before {
-      content: "C";  /* this is your text. You can also use UTF-8 character codes as I do here */
+      content: "R";  /* this is your text. You can also use UTF-8 character codes as I do here */
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
       font-size: 80px;
@@ -285,6 +297,7 @@ body
     font-weight: 400;
     color: #23214c;
     background-color: #323232;
+    border: 1px solid red;
 }
 
 body a
@@ -359,14 +372,14 @@ a.button:hover {
 
 .content-1170
 {
-    width: 1170px;
+    width: 100%;
 }
 
 .content-1170 img
 {
     max-width: 100%;
     max-height: 100%;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
@@ -387,18 +400,24 @@ a.button:hover {
     width: 100% !important;
     top: 0;
     position: fixed;
+    /*visibility: hidden;*/
+    display: none;
 }
 
 #header-main-menu
 {
-    max-width: 1170px;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
+    /*visibility: hidden;*/
+    display: none;
 }
 
 .main-menu.sm-clean
 {
     background-color: transparent;
+    /*visibility: hidden;*/
+    display: none;
 }
 
 .main-menu.sm-clean a
@@ -410,12 +429,16 @@ a.button:hover {
     transition: color .2s linear;
     text-transform: uppercase;
     letter-spacing: 0.03cm;
+    /*visibility: hidden;*/
+    display: none;
 }
 
 .main-menu.sm-clean .sub-menu a
 {
     font-size: 11px;
     line-height: 20px;
+    /*visibility: hidden;*/
+    display: none;
 }
 
 .sm-clean .current_page_item a
@@ -426,6 +449,8 @@ a.button:hover {
 .main-menu.sm-clean a:hover
 {
     color: #fff !important;
+    /*visibility: hidden;*/
+    display: none;
 }
 
 .sm-clean li.active a
@@ -435,13 +460,15 @@ a.button:hover {
 
 .mob-menu
 {
-    display: none;
+    /*display: none;*/
     font-weight: 700;
     font-size: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
     transition: color .2s linear;
     color: #fff;
+    /*visibility: hidden;*/
+    display: none;
 }
 
 /* END TOP MENU */
@@ -465,26 +492,26 @@ a.button:hover {
 .section-title-holder
 {
     background-color: #ffffff;
-    width: 370px;
-    height: 370px;
+    width: 10px;
+    height: 10px;
     z-index: 2;
 }
 
 .section-title-holder-logo
 {
     background-color: #323232;
-    width: 226px;
-    height: 370px;
+    width: 10px;
+    height: 10px;
     z-index: 2;
 }
 
 .section-num span
 {
-    margin-left: -64px;
+    /*margin-left: -64px;*/
     color: #55B286;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 180px;
+    font-size: 5px;
     line-height: 100%;
     letter-spacing: -5px;
 }
@@ -493,28 +520,30 @@ a.button:hover {
 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 109px;
-    width: 245px;
+    font-size: 3px;
+    width: 10px;
     word-break: break-all;
-    line-height: 83px;
+    line-height: 10px;
     margin-top: 10px;
     color: white;
     margin-left: 115px;
     text-transform: uppercase;
     letter-spacing: -3px;
     padding: 0;
+    /*visibility: hidden;*/
+    display: none;
 }
 
 .section-content-holder
 {
     background: #fff;
-    width: 800px;
+    width: 100%;
     padding: 60px 0;
 }
 
 .section-content-holder .content-wrapper
 {
-    padding: 0 60px;
+    padding: 0 0px;
 }
 
 .section-content-holder.right
@@ -701,6 +730,8 @@ h1.big-title
     background-position: center top;
     background-size: auto;
     z-index: 8;
+    border: 1px solid red;
+    /*display: none;*/
 }
 
 #portfolio .section-title-holder
@@ -721,7 +752,7 @@ h1.big-title
 .section-content-holder.portfolio-holder
 {
     background-color: transparent;
-    width: 800px;
+    width: 100%;
     padding: 0;
 }
 
@@ -730,7 +761,7 @@ h1.big-title
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    width: 430px;
+    width: 100%;
     background-color: #E74C78;
     text-align: center;
 }
@@ -765,7 +796,7 @@ h1.big-title
 
 .grid
 {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -788,22 +819,22 @@ h1.big-title
     width: 100%;
     height: auto;
     max-height: none;
-    max-width: none;
+    max-width: 100%;
 }
 
 .grid-sizer, .grid-item
 {
-    width: 400px;
+    width: 100%;
 }
 
 .grid-item.p_one_half
 {
-    width: 400px;
+    width: 100%;
 }
 
 .grid-item.p_one
 {
-    width: 800px;
+    width: 100%;
 }
 
 .portfolio-text-holder
@@ -818,6 +849,7 @@ h1.big-title
     background-color: white;
     text-align: center;
     display: none;
+    /*visibility: hidden;*/
 }
 
 .portfolio-text-wrapper
@@ -837,7 +869,7 @@ h1.big-title
 
 .portfolio-type img
 {
-    width: auto;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -882,6 +914,7 @@ h1.big-title
 div.pp_default .pp_loaderIcon
 {
     display: none !important;
+    /*visibility: hidden;*/
 }
 
 /* END PORTFOLIO SECTION*/
@@ -928,14 +961,16 @@ div.pp_default .pp_loaderIcon
 .member-content-holder
 {
     /* width: 330px; */
-    padding: 90px 50px 50px 50px;
+    /*padding: 90px 50px 50px 50px;*/
     float: left;
+    width: 100%;
+    border: 1px solid red;
 }
 
 .member-image-holder
 {
-    width: 370px;
-    float: right;
+    width: 100%;
+    float: left;
 }
 
 .member-image-holder img
@@ -999,7 +1034,7 @@ div.pp_default .pp_loaderIcon
 .blog-item-holder .num
 {
     display: inline-block;
-    width: 110px;
+    width: 100%;
     font-size: 48px;
     font-weight: 900;
     color: #32db89;
@@ -1008,7 +1043,7 @@ div.pp_default .pp_loaderIcon
 .blog-item-holder .info
 {
     display: inline-block;
-    width: 235px;
+    width: 100%;
 }
 
 .blog-item-holder .info .cat-links a
@@ -1022,7 +1057,7 @@ div.pp_default .pp_loaderIcon
 .blog-item-holder .entry-title
 {
     display: inline-block;
-    width: 325px;
+    width: 100%;
     padding: 0;
     vertical-align: top;
     line-height: 0;
@@ -1063,8 +1098,8 @@ div.pp_default .pp_loaderIcon
 
 .testimonial-slider-holder
 {
-    max-width: 500px;
-    padding-left: 50px;
+    max-width: 100%;
+    /*padding-left: 50px;*/
 }
 
 .testimonial-text
@@ -1256,14 +1291,14 @@ a.video-popup-holder:hover img.popup-play
 
 .map img
 {
-    max-width: none;
+    max-width: 100%;
     max-height: none;
 }
 
 .contact-form
 {
     max-width: 100%;
-    width: 770px;
+    width: 100%;
     margin: 0 auto;
     font-size: 22px;
     color: #9a9a9a;
@@ -1406,6 +1441,7 @@ span.contact-form-not-valid-tip
 footer
 {
     background-color: #323232;
+    width: 100%;
 }
 
 .footer
@@ -1420,12 +1456,12 @@ footer
 
 .footer-left, .footer-right
 {
-    width: 810px;
+    width: 100%;
 }
 
 .footer-right
 {
-    margin-left: 370px;
+    margin-left: 0px;
 }
 
 .footer a
@@ -1467,6 +1503,7 @@ footer
 .single-portfolio .menu-wrapper
 {
     display: none !important;
+    /*visibility: hidden;*/
 }
 
 .single-portfolio article
@@ -1516,7 +1553,7 @@ footer
 
 .single-portfolio .entry-content .one_half
 {
-    width: 435px;
+    width: 100%;
     padding-left: 100px;
     color: #323232;
 }
@@ -1545,10 +1582,9 @@ footer
 
 
 
-/* RESPONSIVE PART */
-@media screen and (max-width: 768px) {
 
-  .content-1170 {
+
+  /*.content-1170 {
     width: 100%;
   }
 
@@ -1556,603 +1592,6 @@ footer
   .center-relative {
     margin-left: auto;
     margin-right: auto;
-  }
+  }*/
 
 }
-
-
-/*PRESET RESPONSIVENESS*/
-/*@media screen and (max-width: 1270px) {
-
-    .content-1170
-    {
-        width: 960px;
-    }
-
-    .one_half
-    {
-        margin-right: 8%;
-        float: left;
-        position: relative;
-        margin-bottom: 37px;
-        color: #323232;
-    }
-
-    .one_half
-    {
-        width: 46%;
-        color: #323232;
-    }
-
-    .section-title-holder
-    {
-        width: 250px;
-        height: 250px;
-    }
-
-    .section-title-holder-logo
-    {
-        width: 153px;
-        height: 250px;
-    }
-
-    .section-num
-    {
-        margin-top: 20px;
-    }
-
-    .section-num span
-    {
-        margin-left: -35px;
-        font-size: 100px;
-    }
-
-    .section-title-holder h2
-    {
-        font-size: 80px;
-        width: 177px;
-        line-height: 66px;
-        margin-top: 25px;
-        margin-left: 75px;
-    }
-
-    .section-content-holder.right
-    {
-        margin-left: 250px;
-    }
-
-    .section-content-holder.left
-    {
-        margin-top: 250px;
-    }
-
-    .section-content-holder
-    {
-        width: 710px;
-    }
-
-    .extra-content-left, .extra-content-right
-    {
-        width: 710px;
-    }
-
-    .extra-content-right
-    {
-        margin-left: 250px;
-    }
-
-    .service-holder
-    {
-        width: 290px;
-    }
-
-    .section-content-holder.portfolio-holder
-    {
-        width: 710px;
-    }
-
-    .grid-item.p_one, .grid
-    {
-        width: 710px;
-    }
-
-    .grid-sizer, .grid-item, .grid-item.p_one_half
-    {
-        width: 355px;
-    }
-
-    .portfolio-holder .portfolio-load-more-holder
-    {
-        width: 460px;
-    }
-
-    .section-content-holder .content-title
-    {
-        font-size: 140px;
-        margin-top: -56px;
-    }
-
-    .member-content-holder
-    {
-        width: 275px;
-        padding: 50px;
-    }
-
-    .member-image-holder
-    {
-        width: 335px;
-    }
-
-    .image-slider-wrapper.team .image_slider_next
-    {
-        right: 260px;
-    }
-
-    .blog-item-holder .entry-title
-    {
-        width: 240px;
-    }
-
-    .single-portfolio .entry-content .one
-    {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .single-portfolio .entry-content .one_half
-    {
-        width: 40%;
-        padding-left: 5%;
-        margin-right: 10%;
-        color: #323232;
-    }
-
-    .single-portfolio .entry-content .one_half.last
-    {
-        padding-left: 0;
-        padding-right: 5%;
-        color: #323232;
-    }
-
-}
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1100px) {
-
-    .single-portfolio .x-close
-    {
-        right: 50%;
-        right: calc(50% - 30px);
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1020px) {
-
-    .content-1170{
-        width: 100%;
-    }
-
-    .extra-content-left, .extra-content-right
-    {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .single-portfolio article
-    {
-        padding-top: 140px;
-    }
-
-    .one_half
-    {
-        width: 100%;
-        float: none;
-        margin-right: 0;
-        margin-left: 0;
-        color: #323232;
-    }
-
-    .single-portfolio .entry-content .one_half
-    {
-        width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-right: 0;
-        color: #323232;
-    }
-
-    .single-portfolio .entry-content .one_half.last
-    {
-        padding-left: 5%;
-        padding-right: 5%;
-        color: #323232;
-    }
-
-    .site-content .one_half, .single-portfolio .entry-content div
-    {
-        text-align: left;
-        color: #323232;
-    }
-
-    .image-slider-wrapper.service a.image_slider_next
-    {
-        top: -89px;
-        right: 0;
-    }
-
-    .section
-    {
-        padding-bottom: 150px;
-    }
-
-    .section-content-holder.right
-    {
-        margin-left: 0;
-    }
-
-    .section-content-holder.left
-    {
-        margin-top: 0;
-    }
-
-    .section-num
-    {
-        display: inline-block;
-        margin-top: 10px;
-    }
-
-    .section-num span
-    {
-        font-size: 50px;
-        margin-left: -15px;
-    }
-
-    .section-title-holder
-    {
-        width: 100%;
-        height: auto;
-        position: relative !important;
-        top: 0 !important;
-    }
-
-    .section-title-holder h2
-    {
-        display: inline-block;
-        width: auto;
-        margin: 0;
-        vertical-align: top;
-        margin-top: 10px;
-        font-size: 50px;
-        line-height: 100%;
-    }
-
-    .section-content-holder
-    {
-        width: 100%;
-        padding: 30px 0;
-    }
-
-    .section-content-holder .content-wrapper
-    {
-        padding: 0 5%;
-    }
-
-    .service-holder
-    {
-        width: 100%;
-        display: block;
-    }
-
-    .service-content-holder
-    {
-        width: 100%;
-        width: calc(100% - 75px);
-        margin-bottom: 30px;
-    }
-
-    .section-content-holder.portfolio-holder
-    {
-        width: 100%;
-    }
-
-    .grid-item.p_one, .grid
-    {
-        width: 100%;
-    }
-
-    .grid-sizer, .grid-item, .grid-item.p_one_half
-    {
-        width: 50%;
-    }
-
-    .portfolio-holder .portfolio-load-more-holder
-    {
-        width: 100%;
-    }
-
-    .member-content-holder
-    {
-        width: 40%;
-        padding: 10% 5% 5% 5%;
-    }
-
-    .member-image-holder
-    {
-        width: 50%;
-    }
-
-    .image-slider-wrapper.team .image_slider_next
-    {
-        right: 40%;
-    }
-
-    .blog-item-holder .entry-title
-    {
-        width: 100%;
-        display: block;
-        padding-top: 20px;
-    }
-
-    .blog-item-holder .info
-    {
-        width: auto;
-    }
-
-    .section-content-holder .content-title-holder
-    {
-        overflow: visible;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
-
-    .section-content-holder .content-title
-    {
-        font-size: 19vw;
-        margin-top: 0;
-    }
-
-    .testimonial-slider-holder
-    {
-        width: 90%;
-        padding-left: 5%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 925px) {
-    .main-menu
-    {
-        display: block !important;
-    }
-
-    .content-1170{
-        width: 100%;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 925px) {
-
-    .intro-page
-    {
-        min-height: 0;
-    }
-
-    .content-1170{
-        width: 100%;
-    }
-
-    .section
-    {
-        position: static !important;
-        z-index: 0 !important;
-    }
-
-    h1.big-title
-    {
-        font-size: 40px;
-        padding-top: 0;
-    }
-
-    h1.big-title span
-    {
-        display: inline;
-    }
-
-    .title-desc
-    {
-        font-size: 19px;
-        line-height: 23px;
-    }
-
-    .mob-menu
-    {
-        display: block;
-        width: 100%;
-    }
-
-    .mob-menu:hover
-    {
-        cursor: pointer;
-    }
-
-    .portfolio-text-holder
-    {
-        display: none !important;
-        opacity: 0 !important;
-    }
-
-    .main-menu
-    {
-        float: none;
-        margin: 0 auto;
-        text-align: center;
-        max-width: 300px;
-        width: 100%;
-        position: relative;
-        z-index: 9999;
-        display: none;
-    }
-
-    .main-menu ul
-    {
-        width: 12em;
-    }
-
-    .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active
-    {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .main-menu.sm-clean a
-    {
-        line-height: 24px;
-    }
-
-    .main-menu.sm-clean .sub-menu a
-    {
-        font-size: 16px;
-        line-height: 25px;
-        text-align: center;
-    }
-
-    .carousel_fw_next
-    {
-        display: block !important;
-    }
-
-    .fw_carousel_pagination
-    {
-        display: none !important;
-    }
-
-
-}
-
-
-
-
-
-
-
-@media screen and (max-width: 805px) {
-
-    .contact-form input[type=text], .contact-form input[type=email], .contact-form textarea, p.custom-field-class, #commentform #email, #commentform #author, #commentform #comment
-    {
-        width: 100% !important;
-    }
-
-    .content-1170{
-        width: 100%;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 650px) {
-
-
-    .member-content-holder
-    {
-        width: 90%;
-        float: none;
-    }
-
-    .member-image-holder
-    {
-        width: 100%;
-        float: none;
-    }
-
-    .image-slider-wrapper.team .image_slider_next
-    {
-        right: auto;
-        left: 30px;
-    }
-
-    .content-1170{
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-@media screen and (max-width: 350px) {
-
-    .section-num
-    {
-        margin-top: 9px;
-    }
-
-    .section-num span
-    {
-        font-size: 35px;
-        margin-left: -10px;
-    }
-
-    .section-title-holder h2
-    {
-        margin-top: 9px;
-        font-size: 35px;
-    }
-
-    .image-slider-wrapper.service a.image_slider_next
-    {
-        top: -84px;
-    }
-
-    .content-1170{
-        width: 100%;
-    }
-}*/
