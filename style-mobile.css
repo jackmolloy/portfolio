@@ -562,6 +562,7 @@ a.button:hover {
     height: 100px;
     margin-top: -60px;
     padding-bottom: 50px;
+    display: none;
 }
 
 .section-content-holder .content-title
@@ -574,6 +575,7 @@ a.button:hover {
     text-transform: uppercase;
     margin-top: -65px;
     color: #323232;
+    display: none;
 }
 
 .extra-content-left
@@ -610,14 +612,18 @@ a.button:hover {
 .intro-page
 {
     /*padding-bottom: 170px;*/
-    min-height: calc(100vh - 170px);
+    /*min-height: calc(100vh - 170px);*/
+    height: 400px;
     background-color: #323232;
     background-image:url(images/home-orbit-bg.jpg);
     background-repeat: no-repeat;
     background-position: center 15%;
     background-size: auto;
     z-index: 1;
+
 }
+
+
 
 .top-logo
 {
@@ -848,7 +854,8 @@ h1.big-title
     font-size: 20px;
     background-color: white;
     text-align: center;
-    display: none;
+    opacity: 0;
+    /*display: none;*/
     /*visibility: hidden;*/
 }
 
@@ -865,6 +872,7 @@ h1.big-title
     font-size: 11px;
     color: #9a9a9a;
     padding-bottom: 20px;
+    display: none;
 }
 
 .portfolio-type img
@@ -882,6 +890,7 @@ h1.big-title
     line-height: 18px;
     letter-spacing: 4px;
     margin-bottom: 10px;
+    display: none;
 }
 
 .portfolio-sec-text
@@ -1543,6 +1552,7 @@ footer
 .single-portfolio .x-close:hover img
 {
     opacity: 1;
+    display: none;
 }
 
 .single-portfolio .entry-content .one
@@ -1551,11 +1561,34 @@ footer
     padding-right: 100px;
 }
 
-.single-portfolio .entry-content .one_half
+.single-portfolio .entry-content
 {
     width: 100%;
     padding-left: 100px;
     color: #323232;
+}
+
+.one_half
+{
+    width: 100%;
+    padding: 0px 10px;
+    margin: 0px;
+    color: #323232;
+}
+
+.mobile-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 1em;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+.mobile-center {
+  text-align: center;
 }
 
 .single-portfolio .entry-content .one_half.last

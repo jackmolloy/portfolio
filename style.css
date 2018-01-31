@@ -3,7 +3,7 @@
 /* ---------- Container for the orbiting circles animation ---------- */
 #circle-orbit-container {
   position: relative;
-  margin: 10% auto;
+  margin: 10% auto 0 auto;
   height: 900px;
   width: 900px;
   text-align: center;
@@ -588,6 +588,10 @@ a.button:hover {
     background-position: center 15%;
     background-size: auto;
     z-index: 1;
+}
+
+.intro-page-mobile {
+  display: none;
 }
 
 .top-logo
