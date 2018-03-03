@@ -1,9 +1,12 @@
 
+.only-mob{
+  display: none;
+}
 
 /* ---------- Container for the orbiting circles animation ---------- */
 #circle-orbit-container {
   position: relative;
-  margin: 10% auto 0 auto;
+  margin: 5% auto 0 auto;
   height: 900px;
   width: 900px;
   text-align: center;
@@ -386,7 +389,7 @@ a.button:hover {
     background-color: transparent;
     width: 100% !important;
     top: 0;
-    position: fixed;
+    /*position: absolute;*/
 }
 
 #header-main-menu
@@ -394,6 +397,7 @@ a.button:hover {
     max-width: 1170px;
     margin: 0 auto;
     text-align: center;
+    /*padding-top: 20px;*/
 }
 
 .main-menu.sm-clean
@@ -870,6 +874,12 @@ h1.big-title
     color: #191919;
 }
 
+/*.grid-item img:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}*/
+
 .more-posts-portfolio img
 {
     transition: all .2s linear;
@@ -911,7 +921,7 @@ div.pp_default .pp_loaderIcon
     background-repeat: no-repeat;
     background-position: center top;
     background-size: auto;
-    z-index: 9;
+    z-index: 7;
 }
 
 #aboutMe .section-title-holder
@@ -1422,6 +1432,20 @@ footer
     padding: 100px 0;
 }
 
+.top-footer {
+    font-size: 16px;
+    line-height: 36px;
+    clear: both;
+    color: #ffffff;
+    text-align: center;
+    /*padding: 0 0 0 40%;*/
+    position: absolute;
+    margin: 0 auto;
+    bottom: 40px;
+    left: 0px;
+    width: 900px;
+}
+
 .footer-left, .footer-right
 {
     width: 810px;
@@ -1437,11 +1461,37 @@ footer
     color: #ffffff;
 }
 
+.top-footer a
+{
+    color: #ffffff;
+}
+
 .social-footer a
 {
     margin: 0 10px;
     font-size: 20px;
 }
+
+.top-footer a {
+      margin: 0 10px;
+      font-size: 25px;
+}
+
+.foot-wrapper {
+    text-align: center;
+    }
+.foot-wrapper ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    /* For IE, the outcast */
+    zoom:1;
+    *display: inline;
+  }
+.foot-wrapper li {
+    float: left;
+    padding: 2px 5px;
+  }
 
 /* END FOOTER */
 

@@ -6,6 +6,34 @@
   width: 100%;
 }
 
+.no-mob {
+  display: none;
+}
+
+.only-mob{
+  display: block;
+}
+
+.mob-splash{
+  height: 768px;
+  width: 100%;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10%;
+  background-image:url(images/home-orbit-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  background-size: auto;
+  z-index: 1;
+
+}
+
+h1.splash-text {
+  padding-top: 45%;
+}
+
 
 /* ---------- Container for the orbiting circles animation ---------- */
 #circle-orbit-container {
@@ -14,7 +42,7 @@
   height: 200px;
   width: 100%;
   text-align: center;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 /* ---------- Inner orbit - This is the circles closest to the central point ---------- */
@@ -26,7 +54,7 @@
   height: 200px;
   border: 2px #4A437F dashed;
   border-radius: 100%;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   /*-webkit-animation: spin-right 40s linear infinite;
   animation: spin-right 40s linear infinite;*/
 }
@@ -104,7 +132,7 @@
   border-radius: 100%;
   -webkit-animation: spin-right 70s linear infinite;
   animation: spin-right 70s linear infinite;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 /* ---------- Repeating styles for the inner orbiting circles ---------- */
@@ -129,7 +157,7 @@
   border-radius: 100%;
   /*-webkit-animation: spin-right 55s linear infinite;
   animation: spin-right 55s linear infinite;*/
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 
@@ -217,10 +245,10 @@
 .orbit-main{
     margin: auto;
     width: 100%;
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     padding: 10px;
     text-align: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .mytextwithicon {
@@ -297,7 +325,7 @@ body
     font-weight: 400;
     color: #23214c;
     background-color: #323232;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 body a
@@ -615,7 +643,7 @@ a.button:hover {
     /*min-height: calc(100vh - 170px);*/
     height: 400px;
     background-color: #323232;
-    background-image:url(images/home-orbit-bg.jpg);
+    background-image:url(images/jack_logo_white.png);
     background-repeat: no-repeat;
     background-position: center 15%;
     background-size: auto;
@@ -736,18 +764,20 @@ h1.big-title
     background-position: center top;
     background-size: auto;
     z-index: 8;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     /*display: none;*/
 }
 
 #portfolio .section-title-holder
 {
     background-color: #48bce6;
+    display: none;
 }
 
 #portfolio .section-title-holder span
 {
     color: #2a6e9b;
+    display: none;
 }
 
 .page-template-page-portfolio .section
@@ -972,8 +1002,18 @@ div.pp_default .pp_loaderIcon
     /* width: 330px; */
     /*padding: 90px 50px 50px 50px;*/
     float: left;
-    width: 100%;
-    border: 1px solid red;
+    /*width: 100%;*/
+    /*border: 1px solid red;*/
+}
+.member-content-holder2
+{
+    /* width: 330px; */
+    /*padding: 90px 50px 50px 50px;*/
+    float: left;
+    /*width: 100%;*/
+    /*border: 1px solid red;*/
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .member-image-holder
@@ -1007,12 +1047,46 @@ div.pp_default .pp_loaderIcon
 .member-content
 {
     line-height: 26px;
+    max-width: 100%;
+}
+
+.member-content2
+{
+    line-height: 26px;
+    max-width: 100%;
+    padding: 0 10%;
 }
 
 .image-slider-wrapper.img .image-slider li img
 {
     width: 100%;
 }
+
+.image-slider-wrapper
+{
+    width: 100%;
+}
+
+#team1 {
+  width: 100%;
+  max-width: 100%;
+}
+
+#team1 ul {
+  width: 100%;
+  max-width: 100%;
+}
+
+#team1_next {
+  width: 100%;
+  max-width: 100%;
+}
+
+.slides {
+  max-width: 100%;
+}
+
+
 
 /* END ABOUT SECTION */
 
@@ -1484,6 +1558,20 @@ footer
     font-size: 20px;
 }
 
+.top-footer {
+    font-size: 16px;
+    line-height: 36px;
+    clear: both;
+    color: #ffffff;
+    text-align: center;
+    /*padding: 0 0 0 40%;*/
+    position: absolute;
+    margin: 0 auto;
+    bottom: 40px;
+    left: 0px;
+    width: 100%;
+}
+
 /* END FOOTER */
 
 
@@ -1577,8 +1665,40 @@ footer
 }
 
 .mobile-container {
-  width: 80%;
+  max-width: 100%;
+  /*margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  font-size: 1em;*/
+}
+
+.mobile-container2 {
+  max-width: 100%;
+  padding-top: none;
+  padding-bottom: none;
+  /*margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  font-size: 1em;*/
+}
+
+.mobile-member {
+  width: 100%;
   margin: auto;
+  /*padding-left: 10%;
+  padding-right: 10%;*/
+  text-align: center;
+  font-size: 1em;
+}
+
+.mobile-member2 {
+  width: 100%;
+  margin: auto;
+  padding: 0 10%;
+  /*padding-left: 10%;
+  padding-right: 10%;*/
   text-align: center;
   font-size: 1em;
 }

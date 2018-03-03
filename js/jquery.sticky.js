@@ -35,7 +35,7 @@
                         s.stickyElement
                             .css('position', '')
                             .css('top', '')
-                            .removeClass(s.className);
+                            // .removeClass(s.className);
                         s.stickyElement.parent().removeClass(s.className);
                         s.currentTop = null;
                     }
