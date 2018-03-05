@@ -18,7 +18,7 @@ jQuery(window).bind('scroll resize', function () {
 });
 
 jQuery(document).ready(function () {
-    jQuery(".menu-wrapper").sticky({topSpacing: 0});
+    // jQuery(".menu-wrapper").sticky({topSpacing: 0});
     jQuery('#header-main-menu ul li a, .slow-scroll').click(function () {
         if (jQuery('.mob-menu').is(':visible'))
         {

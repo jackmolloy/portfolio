@@ -1,14 +1,33 @@
 jQuery(document).ready(function () {
+    // console.log(jQuery(".section-title-holder"));
+    // setTimeout(function() {
+    //   // jQuery(document.body).trigger("sticky_kit:recalc");
+    //   jQuery(".section-title-holder").stick_in_parent({offset_top: 64})
+    //
+    // },1000)
+    // jQuery(".section-title-holder").stick_in_parent({offset_top: 64}).on("sticky_kit:stick", function (e) {
+    //     jQuery('.menu-wrapper, .menu-wrapper .sub-menu').css('backgroundColor', jQuery(this).css("backgroundColor"));
+    //     jQuery('.menu-wrapper a, .mob-menu').css('color', jQuery(this).find('.section-num span').css("color"));
+    // });
+    //
+    // jQuery(".section-title-holder").stick_in_parent({offset_top: 64}).on("sticky_kit:unbottom", function (e) {
+    //     jQuery('.menu-wrapper, .menu-wrapper .sub-menu').css('backgroundColor', jQuery(this).css("backgroundColor"));
+    //     jQuery('.menu-wrapper a, .mob-menu').css('color', jQuery(this).find('.section-num span').css("color"));
+    // });
 
-    jQuery(".section-title-holder").stick_in_parent({offset_top: 64}).on("sticky_kit:stick", function (e) {
-        jQuery('.menu-wrapper, .menu-wrapper .sub-menu').css('backgroundColor', jQuery(this).css("backgroundColor"));
-        jQuery('.menu-wrapper a, .mob-menu').css('color', jQuery(this).find('.section-num span').css("color"));
-    });
 
-    jQuery(".section-title-holder").stick_in_parent({offset_top: 64}).on("sticky_kit:unbottom", function (e) {
-        jQuery('.menu-wrapper, .menu-wrapper .sub-menu').css('backgroundColor', jQuery(this).css("backgroundColor"));
-        jQuery('.menu-wrapper a, .mob-menu').css('color', jQuery(this).find('.section-num span').css("color"));
-    });
+    // var controller = new ScrollMagic.Controller();
+    // var scene = new ScrollMagic.Scene({triggerElement: "#aboutMe .section-title-holder", duration: jQuery("#aboutMe").height() - jQuery("#aboutMe .section-title-holder").height()})
+    //         .offset(window.innerHeight/2)
+    //         .setPin("#aboutMe .section-title-holder", {pushFollowers: false})
+		// 				.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+		// 				.addTo(controller);
+    //
+    // var scene2 = new ScrollMagic.Scene({triggerElement: "#portfolio .section-title-holder", duration: jQuery("#portfolio").height() - jQuery("#portfolio .section-title-holder").height()})
+    //         .offset(window.innerHeight/2)
+    //         .setPin("#portfolio .section-title-holder", {pushFollowers: false})
+		// 				.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+		// 				.addTo(controller);
 
 
     //Placeholder show/hide
@@ -245,33 +264,33 @@ jQuery(window).load(function () {
     });
 
     //Set menu
-    jQuery('.main-menu').smartmenus({
-        subMenusSubOffsetX: 1,
-        subMenusSubOffsetY: -8,
-        markCurrentItem: true
-    });
-    var $mainMenu = jQuery('.main-menu').on('click', 'span.sub-arrow', function (e) {
-        var obj = $mainMenu.data('smartmenus');
-        if (obj.isCollapsible()) {
-            var $item = jQuery(this).parent(),
-                    $sub = $item.parent().dataSM('sub');
-            $sub.dataSM('arrowClicked', true);
-        }
-    }).bind({
-        'beforeshow.smapi': function (e, menu) {
-            var obj = $mainMenu.data('smartmenus');
-            if (obj.isCollapsible()) {
-                var $menu = jQuery(menu);
-                if (!$menu.dataSM('arrowClicked')) {
-                    return false;
-                }
-                $menu.removeDataSM('arrowClicked');
-            }
-        }
-    });
+    // jQuery('.main-menu').smartmenus({
+    //     subMenusSubOffsetX: 1,
+    //     subMenusSubOffsetY: -8,
+    //     markCurrentItem: true
+    // });
+    // var $mainMenu = jQuery('.main-menu').on('click', 'span.sub-arrow', function (e) {
+    //     var obj = $mainMenu.data('smartmenus');
+    //     if (obj.isCollapsible()) {
+    //         var $item = jQuery(this).parent(),
+    //                 $sub = $item.parent().dataSM('sub');
+    //         $sub.dataSM('arrowClicked', true);
+    //     }
+    // }).bind({
+    //     'beforeshow.smapi': function (e, menu) {
+    //         var obj = $mainMenu.data('smartmenus');
+    //         if (obj.isCollapsible()) {
+    //             var $menu = jQuery(menu);
+    //             if (!$menu.dataSM('arrowClicked')) {
+    //                 return false;
+    //             }
+    //             $menu.removeDataSM('arrowClicked');
+    //         }
+    //     }
+    // });
 
 
-    jQuery('.section-title-holder').trigger("sticky_kit:recalc");
+    // jQuery('.section-title-holder').trigger("sticky_kit:recalc");
 
     jQuery('.doc-loader').fadeOut('fast');
 });
@@ -279,7 +298,7 @@ jQuery(window).load(function () {
 
 jQuery(window).resize(function () {
 
-    //Show-Hide Mobile Menu        
+    //Show-Hide Mobile Menu
     if (jQuery("body").width() <= 925)
     {
         jQuery('.main-menu a').on("click", hideMobMenuItemClick);

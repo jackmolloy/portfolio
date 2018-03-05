@@ -388,8 +388,8 @@ a.button:hover {
     z-index: 99 !important;
     background-color: transparent;
     width: 100% !important;
-    top: 0;
-    /*position: absolute;*/
+    position: relative;
+    top: 30px;
 }
 
 #header-main-menu
@@ -472,6 +472,11 @@ a.button:hover {
     width: 370px;
     height: 370px;
     z-index: 2;
+}
+
+.section-title-holder.right{
+  /*right: 0 !important;*/
+  left: 100% !important
 }
 
 .section-title-holder-logo
